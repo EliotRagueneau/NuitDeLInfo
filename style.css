@@ -22,11 +22,14 @@ ol.odd {
   width: 6em;
   height: 10.2em;
   border-radius: 1em/0.5em;
-  background: rgb(231, 103, 71);
+  background: rgb(179, 51, 12);
   transform: rotate(-90deg);
   display: inline-block;
   margin-right: 4.61538em;
   transition: all 150ms ease-in-out;
+  -webkit-box-shadow: 7px 6px 14px -6px rgba(84,30,7,0.84);
+    -moz-box-shadow: 7px 6px 14px -6px rgba(84,30,7,0.84);
+    box-shadow: 7px 6px 14px -6px rgba(84,30,7,0.84);
 }
 .hex:before, .hex:after {
   position: absolute;
@@ -61,14 +64,17 @@ ol.odd {
 
 .sidenav {
     height: 100%; /* Full-height: remove this if you want "auto" height */
-    width: 160px; /* Set the width of the sidebar */
+    width: 250px; /* Set the width of the sidebar */
     position: fixed; /* Fixed Sidebar (stay in place on scroll) */
     z-index: 1; /* Stay on top */
     top: 0; /* Stay at the top */
     left: 0;
-    background-color: #111; /* Black */
+    background-color: rgb(112, 9, 43); /* Black */
     overflow-x: hidden; /* Disable horizontal scroll */
     padding-top: 20px;
+    -webkit-box-shadow: 7px 6px 14px -6px rgba(255,255,255,0.8);
+    -moz-box-shadow: 7px 6px 14px -6px rgba(255,255,255,0.8);
+    box-shadow: 7px 6px 14px -6px rgba(255,255,255,0.8);
   }
   
   /* The navigation menu links */
@@ -76,13 +82,13 @@ ol.odd {
     padding: 6px 8px 6px 16px;
     text-decoration: none;
     font-size: 25px;
-    color: #818181;
+    color: #ffffff;
     display: block;
   }
   
   /* When you mouse over the navigation links, change their color */
   .sidenav a:hover {
-    color: #f1f1f1;
+    color: rgb(112, 9, 43);
   }
   
   /* Style page content */
@@ -98,5 +104,6 @@ ol.odd {
   }
 
   body {
-      overflow: hidden
+      overflow: hidden;
+      background-color : rgb(59, 4, 4);
   }
