@@ -1,4 +1,4 @@
-@import "compass/css3";
+/*@import "compass/css3";*/
 /* ----------------------------------------- */
 .forme {
     width: 1000px;
@@ -7,47 +7,54 @@
     top: -110px;
     right: -564px;
 }
+
 ol.even {
-  position: relative;
-  left: 5.45455em;
+    position: relative;
+    left: 5.45455em;
 }
+
 ol.odd {
-  position: relative;
-  margin-top: -6.5%;
-  margin-bottom: -6.5%;
+    position: relative;
+    margin-top: -6.5%;
+    margin-bottom: -6.5%;
 }
+
 .hex {
-  position: relative;
-  margin: 1em auto;
-  width: 6em;
-  height: 10.2em;
-  border-radius: 1em/0.5em;
-  background: rgb(179, 51, 12);
-  transform: rotate(-90deg);
-  display: inline-block;
-  margin-right: 4.61538em;
-  transition: all 150ms ease-in-out;
-  -webkit-box-shadow: 7px 6px 14px -6px rgba(84,30,7,0.84);
-    -moz-box-shadow: 7px 6px 14px -6px rgba(84,30,7,0.84);
-    box-shadow: 7px 6px 14px -6px rgba(84,30,7,0.84);
+    position: relative;
+    margin: 1em auto;
+    width: 6em;
+    height: 10.2em;
+    border-radius: 1em/0.5em;
+    background: rgb(255, 38, 113);
+    transform: rotate(-90deg);
+    display: inline-block;
+    margin-right: 4.61538em;
+    transition: all 150ms ease-in-out;
+    -webkit-box-shadow: 7px 6px 14px -6px rgba(84, 30, 7, 0.84);
+    -moz-box-shadow: 7px 6px 14px -6px rgba(84, 30, 7, 0.84);
+    box-shadow: 7px 6px 14px -6px rgba(84, 30, 7, 0.84);
 }
+
 .hex:before, .hex:after {
-  position: absolute;
-  width: inherit;
-  height: inherit;
-  border-radius: inherit;
-  background: inherit;
-  content: '';
+    position: absolute;
+    width: inherit;
+    height: inherit;
+    border-radius: inherit;
+    background: inherit;
+    content: '';
 }
+
 .hex:before {
-  transform: rotate(60deg);
+    transform: rotate(60deg);
 }
+
 .hex:after {
-  transform: rotate(-60deg);
+    transform: rotate(-60deg);
 }
+
 .hex:hover {
-  background: #f58787;
-  cursor: pointer;
+    background: #f58787;
+    cursor: pointer;
 }
 
 .icone1 {
@@ -69,41 +76,54 @@ ol.odd {
     z-index: 1; /* Stay on top */
     top: 0; /* Stay at the top */
     left: 0;
-    background-color: rgb(112, 9, 43); /* Black */
+    background-color: rgb(153, 35, 74); /* Black */
     overflow-x: hidden; /* Disable horizontal scroll */
     padding-top: 20px;
-    -webkit-box-shadow: 7px 6px 14px -6px rgba(255,255,255,0.8);
-    -moz-box-shadow: 7px 6px 14px -6px rgba(255,255,255,0.8);
-    box-shadow: 7px 6px 14px -6px rgba(255,255,255,0.8);
-  }
-  
-  /* The navigation menu links */
-  .sidenav a {
+    -webkit-box-shadow: 7px 6px 14px -6px rgba(255, 255, 255, 0.8);
+    -moz-box-shadow: 7px 6px 14px -6px rgba(255, 255, 255, 0.8);
+    box-shadow: 7px 6px 14px -6px rgba(255, 255, 255, 0.8);
+}
+
+/* The navigation menu links */
+.sidenav a {
     padding: 6px 8px 6px 16px;
     text-decoration: none;
     font-size: 25px;
     color: #ffffff;
     display: block;
-  }
-  
-  /* When you mouse over the navigation links, change their color */
-  .sidenav a:hover {
-    color: rgb(112, 9, 43);
-  }
-  
-  /* Style page content */
-  .main {
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidenav a:hover {
+
+    text-shadow: 0 0 5px rgb(255, 38, 113);
+}
+
+/* Style page content */
+.main {
     margin-left: 160px; /* Same as the width of the sidebar */
     padding: 0px 10px;
-  }
-  
-  /* On smaller screens, where height is less than 450px, change the style of the sidebar (less padding and a smaller font size) */
-  @media screen and (max-height: 450px) {
-    .sidenav {padding-top: 15px;}
-    .sidenav a {font-size: 18px;}
-  }
+}
 
-  body {
-      overflow: hidden;
-      background-color : rgb(59, 4, 4);
-  }
+/* On smaller screens, where height is less than 450px, change the style of the sidebar (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+    .sidenav {
+        padding-top: 15px;
+    }
+
+    .sidenav a {
+        font-size: 18px;
+    }
+}
+
+@font-face {
+    font-family: "Azonix";
+    src: url(fonts/Azonix.otf) format("opentype");
+}
+
+body {
+    overflow: hidden;
+    background-color: rgb(59, 8, 34);
+    font-family: Azonix;
+    color: white;
+}
