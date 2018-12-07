@@ -71,7 +71,7 @@ ol.odd {
 
 .sidenav {
     height: 100%; /* Full-height: remove this if you want "auto" height */
-    width: 250px; /* Set the width of the sidebar */
+    width: 300px; /* Set the width of the sidebar */
     position: fixed; /* Fixed Sidebar (stay in place on scroll) */
     z-index: 1; /* Stay on top */
     top: 0; /* Stay at the top */
@@ -79,9 +79,9 @@ ol.odd {
     background-color: rgb(153, 35, 74); /* Black */
     overflow-x: hidden; /* Disable horizontal scroll */
     padding-top: 20px;
-    -webkit-box-shadow: 7px 6px 14px -6px rgba(255, 255, 255, 0.8);
-    -moz-box-shadow: 7px 6px 14px -6px rgba(255, 255, 255, 0.8);
-    box-shadow: 7px 6px 14px -6px rgba(255, 255, 255, 0.8);
+    /*-webkit-box-shadow: 7px 6px 14px -6px rgba(255, 255, 255, 0.8);*/
+    /*-moz-box-shadow: 7px 6px 14px -6px rgba(255, 255, 255, 0.8);*/
+    box-shadow: 5px 0 15px rgba(0, 0, 0, 0.26);
 }
 
 /* The navigation menu links */
@@ -94,7 +94,7 @@ ol.odd {
 }
 
 /* When you mouse over the navigation links, change their color */
-.sidenav a:hover {
+.sidenav p:hover {
 
     text-shadow: 0 0 5px rgb(255, 38, 113);
 }
