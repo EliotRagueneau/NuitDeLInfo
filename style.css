@@ -86,8 +86,8 @@ img.second_row {
   height: 80px;
   position: absolute;
   z-index: 1;
-  top: 363px;
-  left: 50px;
+  top: 60px;
+  left: 48px;
   text-align: center;
   cursor: alias;
   pointer-events: none;
@@ -98,7 +98,7 @@ img.third_row {
   height: 80px;
   position: absolute;
   z-index: 1;
-  top: 363px;
+  top: 60px;
   left: 226px;
   text-align: center;
   cursor: alias;

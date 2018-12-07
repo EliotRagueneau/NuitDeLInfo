@@ -9,6 +9,13 @@ $("#life").click(function () {
     goIn();
 });
 
+$("#weather").click(function () {
+    goOut();
+
+    $(".main").html("<h2>Daily weather</h2>");
+
+    goIn();
+});
 
 function goOut() {
     if (first_click) {
@@ -26,4 +33,3 @@ function goIn() {
         width: "100vw",
     }, "slow", "swing");
 }
-
