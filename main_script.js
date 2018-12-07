@@ -1,10 +1,29 @@
+first_click = true;
+
+
 $("#life").click(function () {
-    main = $(".main");
-    main.html("<h2>Bite</h2>");
-    main.animate({
+    goOut();
 
-    });
+    $(".main").html("<h2>Bite</h2>");
 
+    goIn();
 });
 
-$(".main").toggle();
+
+function goOut() {
+    if (first_click) {
+        first_click = false
+    } else {
+        $(".main").animate({
+            width: "300vw",
+        }, "slow", "swing");
+    }
+
+}
+
+function goIn() {
+    $(".main").animate({
+        width: "100vw",
+    }, "slow", "swing");
+}
+

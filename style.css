@@ -30,9 +30,8 @@ ol.odd {
     display: inline-block;
     margin-right: 4.61538em;
     transition: all 150ms ease-in-out;
-    -webkit-box-shadow: 7px 6px 14px -6px rgba(84, 30, 7, 0.84);
-    -moz-box-shadow: 7px 6px 14px -6px rgba(84, 30, 7, 0.84);
-    box-shadow: 7px 6px 14px -6px rgba(84, 30, 7, 0.84);
+
+
 }
 
 .hex:before, .hex:after {
@@ -42,6 +41,7 @@ ol.odd {
     border-radius: inherit;
     background: inherit;
     content: '';
+
 }
 
 .hex:before {
