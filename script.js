@@ -21,8 +21,8 @@ var span = document.getElementsByClassName("close")[0];
 // }
 
 setTimeout(function() {
-    modal.style.display = "none";
-}, 3000);
+    $("#myModal").fadeOut();
+}, 2000);
 
 $("#play").click(function(){
   $("#audio").play();
