@@ -1,3 +1,10 @@
 $("#life").click(function () {
-    $("main").html("<h2>Life</h2>");
+    main = $(".main");
+    main.html("<h2>Bite</h2>");
+    main.animate({
+
+    });
+
 });
+
+$(".main").toggle();
