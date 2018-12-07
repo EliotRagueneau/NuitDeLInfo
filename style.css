@@ -30,9 +30,8 @@ ol.odd {
     display: inline-block;
     margin-right: 4.61538em;
     transition: all 150ms ease-in-out;
-    -webkit-box-shadow: 7px 6px 14px -6px rgba(84, 30, 7, 0.84);
-    -moz-box-shadow: 7px 6px 14px -6px rgba(84, 30, 7, 0.84);
-    box-shadow: 7px 6px 14px -6px rgba(84, 30, 7, 0.84);
+
+
 }
 
 .hex:before, .hex:after {
@@ -42,6 +41,7 @@ ol.odd {
     border-radius: inherit;
     background: inherit;
     content: '';
+
 }
 
 .hex:before {
@@ -57,7 +57,7 @@ ol.odd {
     cursor: pointer;
 }
 
-#icone1 {
+img.first_col {
     width: 80px;
     height: 80px;
     position: absolute;
@@ -67,6 +67,43 @@ ol.odd {
     text-align: center;
     cursor: alias;
     pointer-events: none;
+}
+
+img.second_col {
+  width: 80px;
+  height: 80px;
+  position: absolute;
+  z-index: 1;
+  top: 60px;
+  left: 226px;
+  text-align: center;
+  cursor: alias;
+  pointer-events: none;
+  }
+
+img.second_row {
+  width: 80px;
+  height: 80px;
+  position: absolute;
+  z-index: 1;
+  top: 60px;
+  left: 48px;
+  text-align: center;
+  cursor: alias;
+  pointer-events: none;
+  }
+
+img.third_row {
+  width: 80px;
+  height: 80px;
+  position: absolute;
+  z-index: 1;
+  top: 60px;
+  left: 226px;
+  text-align: center;
+  cursor: alias;
+  pointer-events: none;
+
 }
 
 .sidenav {
@@ -123,7 +160,7 @@ ol.odd {
 
 body {
     overflow: hidden;
-    background-color: rgb(59, 8, 34);
+    background-image: url("./Icone/desert.jpg");
     font-family: Azonix;
     color: white;
 }
