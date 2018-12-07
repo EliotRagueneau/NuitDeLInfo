@@ -160,7 +160,7 @@ img.third_row {
 
 body {
     overflow: hidden;
-    background-color: rgb(59, 8, 34);
+    background-image: url("./Icone/desert.jpg");
     font-family: Azonix;
     color: white;
 }
