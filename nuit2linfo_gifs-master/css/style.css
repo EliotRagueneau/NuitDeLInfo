@@ -1,0 +1,260 @@
+h1 {
+  margin-left: 35%;
+}
+
+#date_janvier, #date_fevrier, #date_mars, #date_avril,#date_mai,#date_juin,#lama,#date_aout,#date_septembre,#date_octobre,#date_novembre,#date_decembre {
+  cursor:pointer;
+}
+
+body { background: #eceff1; }
+
+body, body > * {
+  margin: 0;
+  padding: 0;
+  font-family: 'Arial', sans-serif;
+  font-weight: 300!important;
+  font-weight: normal;
+  font-size: 10px;
+}
+
+* { transition: all .3s ease 0s; }
+
+/* Background colours */
+
+div + div article:nth-child(1) { background: #d50000; }
+
+div + div article:nth-child(2) { background: #c51162; }
+
+div + div article:nth-child(3) { background: #aa00ff; }
+
+div + div article:nth-child(4) { background: #6200ea; }
+
+div + div article:nth-child(5) { background: #00bfa5; }
+
+div + div article:nth-child(6) { background: #00c853; }
+
+div + div article:nth-child(7) { background: #aeea00; }
+
+div + div article:nth-child(8) { background: #ffd600; }
+
+div + div article:nth-child(9) { background: #ff6d00; }
+
+div + div article:nth-child(10) { background: #3e2723; }
+
+div + div article:nth-child(11) { background: #212121; }
+
+div + div article:nth-child(12), div + div { background: #263238; }
+
+
+/* Main layout */
+
+html, body, div + div {
+  width: 100vw;
+  height: 95vh;
+}
+
+div + div {
+  list-style: none;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: stretch;
+  overflow: hidden;
+}
+
+/* Articles */
+
+div + div article {
+  flex: initial;
+  width: 8.4%;
+  height: 100%;
+  text-align: center;
+  color: #fff;
+  text-decoration: none;
+  vertical-align: bottom;
+  box-sizing: border-box;
+  padding: 2vh 1vw;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Big Headings */
+
+body > div:first-child {
+  position: fixed;
+  bottom: 8vh;
+  background: #fff;
+  width: 50%;
+  text-align: center;
+ padding: .5rem;
+  z-index: 2;
+}
+
+body > div:first-child h1, body > div:first-child h2 {
+  margin: 0;
+  padding: 0;
+}
+
+/* Hover interaction */
+
+div + div:hover article {
+  flex: initial;
+  width: 3.4%;
+}
+
+div + div article:hover { width: 60%; }
+
+article > div {
+  opacity: 0;
+  transition: opacity .2s ease 0;
+}
+
+div + div article:hover > div {
+  opacity: 1;
+  transition: opacity .3s ease .3s;
+}
+
+/* navigation */
+
+div + div article > h2 {
+  bottom: 2vh;
+  position: absolute;
+  text-align: center;
+  width: 100%;
+  margin: 0;
+  font-size: 3vh;
+}
+
+/* Article layouts */
+
+article div {
+  text-align: left;
+  width: 58vw;
+}
+
+article div p, article div div h2, article div h3 { margin: 0 0 1em 0; }
+
+/* h1, h2, h3, h4, h5, h6 { text-transform: uppercase; } */
+
+article div p { width: 40vw; }
+@media (max-width: 900px) {
+
+div + div article { padding: 2vh 3vw; }
+
+div + div article > h2 {
+  transform: rotate(90deg);
+  bottom: 23vh;
+  min-width: 12em;
+  text-align: left;
+  transform: rotate(-90deg);
+  transform-origin: 0 0 0;
+  opacity: 1;
+}
+
+div + div article:hover > h2 { opacity: 0; }
+
+article div p { width: 50vw; }
+
+article div {
+  max-height: calc(72%);
+  overflow-y: auto;
+}
+}
+
+
+/*GIFS RESIZED*/
+IMG {
+  display: block;
+  margin-top: 2em;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 400px;
+  max-height: 400px;
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 2px 2px 5px rgba(0,0,0,0.5),
+              inset 5px 5px 8px rgba(0,0,0,0.5);
+}
+
+/*CALENDAR ICONS*/
+ul {list-style-type: none;}
+body {font-family: Verdana, sans-serif;}
+
+/* Month header */
+.month {
+  padding: 70px 25px;
+  width: 100%;
+  background: #1abc9c;
+  text-align: center;
+}
+
+/* Month list */
+.month ul {
+  margin: 0;
+  padding: 0;
+}
+
+.month ul li {
+  color: white;
+  font-size: 20px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+
+/* Previous button inside month header */
+.month .prev {
+  float: left;
+  padding-top: 10px;
+}
+
+/* Next button */
+.month .next {
+  float: right;
+  padding-top: 10px;
+}
+
+/* Weekdays (Mon-Sun) */
+.weekdays {
+  margin: 0;
+  padding: 10px 0;
+  background-color:#ddd;
+  margin-top: 10em;
+}
+
+.weekdays li {
+  display: inline-block;
+  width: 13.6%;
+  color: #666;
+  text-align: center;
+}
+
+/* Days (1-31) */
+.days {
+  padding: 10px 0;
+  background: #eee;
+  margin: 0;
+}
+
+.days li {
+  list-style-type: none;
+  display: inline-block;
+  width: 13.6%;
+  text-align: center;
+  margin-bottom: 5px;
+  font-size:12px;
+  color: #777;
+}
+
+/* Highlight the "current" day */
+.days li .active {
+  padding: 5px;
+  background: #1abc9c;
+  color: white !important;
+  cursor: pointer;
+}
+
+.calendar{
+  margin-bottom: 3em;
+}
