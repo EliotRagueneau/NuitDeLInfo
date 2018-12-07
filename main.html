@@ -7,13 +7,14 @@
     <link rel="stylesheet" type="text/css" href="modal_image.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
-    <script type="text/javascript" src="loading.js"></script>
+    <!-- <script type="text/javascript" src="loading.js"></script> -->
     <script src="loading.js"></script>
     <link rel="stylesheet" href="centre.css">
 
 </head>
 <body>
-<img id="myImg" src="index.jpeg" style="width:100%;max-width:300px">
+  <div class="sidenav">
+<img id="myImg" src="logo.svg" style="width:80%;max-width:300px" class=center>
 
      <!-- The Modal -->
 <div id="myModal" class="modal">
@@ -22,7 +23,10 @@
   <div id="caption"></div>
   </div>
   <script src="script.js"></script>
-<div class="sidenav">
+
+  <audio controls>
+	<source src="radiokingV3.mp3" type="audio/mpeg">
+  </audio>
   <a href="#">About</a>
   <a href="#">Services</a>
   <a href="#">Clients</a>

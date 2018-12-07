@@ -23,3 +23,8 @@ var span = document.getElementsByClassName("close")[0];
 setTimeout(function() {
     modal.style.display = "none";
 }, 3000);
+
+$("#play").click(function(){
+  $("#audio").play();
+  console.log("coucou");
+});
